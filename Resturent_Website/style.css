@@ -1,0 +1,451 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container{
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+
+/* 
+  font-family: 'Electrolize', sans-serif;
+
+
+font-family: 'Monoton', cursive;
+
+
+font-family: 'Mulish', sans-serif; 
+
+font-family: 'Noto Serif', serif; (menu)
+
+*/
+
+}
+
+.row{
+  width: 100%;
+
+}
+
+.row::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+
+
+[class*="col-"]{
+  width: 100% ; 
+  padding: 15px;
+}
+
+
+
+/* Header start */
+
+header{
+  background-color: brown;
+  padding: 0% 1%;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  padding-top: 7px;
+  line-height: 70px;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid white;
+
+
+}
+
+nav ul li{
+ 
+  text-align: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 70px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-family: 'Noto Serif', serif;
+  transition: .4s;
+  text-align: center;
+  
+
+
+
+
+}
+
+
+nav ul li a:hover{
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+  
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Header Ends */
+
+
+
+
+
+/* Banner Starts  */
+
+#banner-sec{
+  background-image: url("img/resturent.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.banner-content{
+  padding:50px 10px ;
+  text-align: center;
+
+}
+
+.banner-content h1{
+  width: 100%;
+  margin: 15px auto;
+  font-size: 4rem;
+  background-color: crimson;
+  color: beige;
+  font-family: 'Monoton', cursive;
+  padding: 10px;
+
+
+  
+
+}
+
+.banner-content p{
+  width: 100%;
+  margin: 15px auto;
+  font-size: 2rem;
+  background-color: goldenrod;
+  color: darkslategrey;
+  font-family: 'Anton', sans-serif;
+
+
+
+}
+
+.btn1{
+  background-color: black;
+  color: cornsilk;
+  font-family: 'Mulish', sans-serif; 
+  padding-top: 10px ; 
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 2px solid chartreuse;
+  text-transform: uppercase;
+  transition: .4s;
+
+
+}
+
+.btn1:hover{
+  background-color: darkgreen;
+  box-shadow: darkslategray;
+  transform: scale(1.2);
+
+}
+
+
+
+
+
+
+
+
+
+/* Banner ends */
+
+
+/* about starts */
+
+#about-us{
+  padding : 1% ;
+  background-color: grey;
+
+}
+
+.about-us-content{
+
+  text-align: center;
+
+}
+
+.about-us-content h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+
+}
+
+.about-us-content p{
+  font-size: 00.9rem;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+
+/* about ends */
+
+
+/* Food menu starts */
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Food menu ends */
+
+
+
+/* Making this website responsive  */
+
+@media (min-width: 576px){
+
+
+  .col-sm-1{
+    width: 8.33%;
+  }
+
+  .col-sm-2{
+    width: 16.66%;
+  }
+
+  .col-sm-3{
+    width: 24.99%;
+  }
+
+  .col-sm-4{
+    width: 33.32%;
+  }
+
+  .col-sm-5{
+    width: 41.65%;
+  }
+
+  .col-sm-6{
+    width: 49.98%;
+  }
+
+  .col-sm-7{
+    width: 58.31%;
+  }
+
+  .col-sm-8{
+    width: 66.64%;
+  }
+
+  .col-sm-9{
+    width: 74.97%;
+  }
+
+  .col-sm-10{
+    width: 83.3%;
+  }
+
+  .col-sm-11{
+    width: 91.63%;
+  }
+
+  .col-sm-12{
+    width: 99.96%;
+  }
+
+
+}
+
+
+/* Medium device */
+
+
+@media (min-width: 768px){
+
+
+  .col-md-1{
+    width: 8.33%;
+  }
+
+  .col-md-2{
+    width: 16.66%;
+  }
+
+  .col-md-3{
+    width: 24.99%;
+  }
+
+  .col-md-4{
+    width: 33.32%;
+  }
+
+  .col-md-5{
+    width: 41.65%;
+  }
+
+  .col-md-6{
+    width: 49.98%;
+  }
+
+  .col-md-7{
+    width: 58.31%;
+  }
+
+  .col-md-8{
+    width: 66.64%;
+  }
+
+  .col-md-9{
+    width: 74.97%;
+  }
+
+  .col-md-10{
+    width: 83.3%;
+  }
+
+  .col-md-11{
+    width: 91.63%;
+  }
+
+  .col-md-12{
+    width: 99.96%;
+  }
+
+
+}
+
+
+
+ 
+/* Large screen  */
+
+
+
+@media (min-width: 992px){
+
+
+  .col-lr-1{
+    width: 8.33%;
+  }
+
+  .col-lr-2{
+    width: 16.66%;
+  }
+
+  .col-lr-3{
+    width: 24.99%;
+  }
+
+  .col-lr-4{
+    width: 33.32%;
+  }
+
+  .col-lr-5{
+    width: 41.65%;
+  }
+
+  .col-lr-6{
+    width: 49.98%;
+  }
+
+  .col-lr-7{
+    width: 58.31%;
+  }
+
+  .col-lr-8{
+    width: 66.64%;
+  }
+
+  .col-lr-9{
+    width: 74.97%;
+  }
+
+  .col-lr-10{
+    width: 83.3%;
+  }
+
+  .col-lr-11{
+    width: 91.63%;
+  }
+
+  .col-lr-12{
+    width: 99.96%;
+  }
+
+
+}
+
+
+
+
+
